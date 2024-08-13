@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-image: url(../Images/deerbg.jpg);
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh; /* Sets the body height to the viewport height */
+    width: 100vw; /* Sets the body width to the viewport width */
+    overflow: hidden; /* Prevents scrolling */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.navbar{
+    width: 100vw;
+    height: 10vh;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo{
+    padding: 2vmin 4vmin;
+}
+.logo h2{
+    color: white;
+    top: 0;
+    left: 0;
+    font-size: 4.7vmin;
+    font-family: sans-serif;
+}
+.nav-items{
+    display: flex;
+    flex-direction: row;
+}
+.items{
+    margin: auto 5vmin;
+    list-style: none;
+}
+.items a{
+    font-family: sans-serif;
+    font-size: 2.2vmin;
+    text-decoration: none;
+    color: white;    
+}
+.btn{
+    margin: auto;
+    margin-right: 2vmin;
+    height: 5vmin;
+    width: 10vmin;
+    border-radius: 1vmin;
+    font-size: 1.2rem;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+.nav-items .items a:hover{
+    color: rgb(240, 208, 165);
+    cursor: pointer;
+    /* transform: scale(1.5); */
+    font-size: 1.8rem;
+    transition: 0.3s;
+}
+.login-signup{
+    height: 70vh;
+    width: 35vw;
+}
+form{
+    margin-top: 5vmin;
+    height: 70vh;
+    width: 35vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: transparent;
+    backdrop-filter: blur(40px);
+    border-radius: 3vmin;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    /* border: 5px solid white; */
+}
+.sign-up{
+    height: 5vmin;
+    width: 20vmin;
+    display: inline;
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+    color: #162938;
+    margin-top: 5vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vmin;
+}
+.input-items{
+    display: flex;
+    flex-direction: column;
+}
+.inputdiv{
+    margin-bottom: 5vmin;
+    width: 30vw;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2vmin;
+    border-bottom: 3px solid #162938;
+    border-radius: 1vmin;
+}
+.input{
+    height: 5vmin;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1rem;
+    color: #162938;
+}
+::placeholder{
+    color: black;
+}
+.fa-solid{
+    margin-left: 1vmin;
+    color: #162938;
+}
+#last{
+    margin-bottom: 2vmin;
+}
+#first{
+    margin-top: 2vmin;
+}
+.forgot{
+    font-size: 1rem;
+    color: white;
+}
+.forgot a{
+    text-decoration: none;
+    color: rgb(177, 103, 246);
+}
+.forgot a:hover{
+    text-decoration: underline;
+}
+.submit{
+    display: flex;
+    gap: 5vmin;
+}
+.subtminbtn{
+    margin-top: 5vmin;
+    height: 6vmin;
+    width: 40vmin;
+    /* border: 1px solid white; */
+    border: none;
+    border-radius: 1vmin;
+    background-color: #162938;
+    font-size: 1.2rem;
+    color: white; 
+}
+.togglediv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-top: 3vmin;
+}
+.togglediv a:hover{
+    text-decoration: underline;
+}
+.loginbtn{
+    margin-top: 1vmin;
+    height: 4vmin;
+    width: 8vmin;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 1rem;
+}
+.loginbtn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}

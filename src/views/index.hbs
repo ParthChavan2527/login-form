@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/4db352db14.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <h2>Logo</h2>
+            </div>
+            <div class="nav-items">
+                <li class="items"><a href="#">Home</a></li>
+                <li class="items"><a href="#">About</a></li>
+                <li class="items"><a href="#">Section1</a></li>
+                <li class="items"><a href="#">Section2</a></li>
+                <button type="button" class="btn" id="login-btn">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="sign-up toggletext">
+        <h1>Sign-Up</h1>
+    </div>
+
+    <div class="login-signup">
+        <form action="/register" method="post" class="signup-form">
+            <div class="input-items">
+                <div class="inputdiv name" id="name">
+                    <i class="fa-solid fa-user"></i>
+                    <input class="input" type="text" name="name" placeholder="Name" required>
+                </div>
+                <div class="inputdiv number" id="number">
+                    <i class="fa-solid fa-phone"></i>
+                    <input class="input" type="text" name="phone" placeholder="Mobile Number" required>
+                </div>
+                <div class="inputdiv gmail" id="gmail">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input class="input" type="email" name="gmail" placeholder="Gmail" required>
+                </div>
+                <div class="inputdiv password" id="password">
+                    <i class="fa-solid fa-lock"></i>
+                    <input class="input" type="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="forgot">
+                    Forgot Password <a href="#">Click Here!</a>
+                </div>
+            </div>
+
+            <div class="submit">
+                <button class="subtminbtn" type="submit">Register</button>
+            </div>
+
+            <div class="togglediv forgot">
+                Already have an account?
+            </div>
+             <button type = "button" class = "loginbtn" id="login-btn">Login</button>
+            
+        </form>
+    </div>
+
+    <script>
+       const btn = document.querySelector(".loginbtn");
+       const mobile = document.querySelector(".number");
+       const gmail = document.querySelector(".gmail");
+       const togglediv = document.querySelector(".togglediv");
+       const toggletext = document.querySelector(".toggletext");
+       let cnt = 0;
+
+       btn.addEventListener("click" , ()=>{
+
+        cnt++;
+        if(cnt % 2 != 0){
+            gmail.style.display = "none";
+            mobile.style.display = "none";
+            togglediv.innerHTML = " Don't have an account?";
+            btn.innerHTML = "SignUp";
+            toggletext.innerHTML = "<h1>Login</h1>";
+        }
+        else{
+            gmail.style.display = "flex";
+            mobile.style.display = "flex";
+            togglediv.innerHTML = "Already have an account?";
+            btn.innerHTML = "Login";
+            toggletext.innerHTML = "<h1>Sign-Up</h1>";
+        }
+       })
+    </script>
+</body>
+
+</html>
